@@ -1,0 +1,148 @@
+# GET http://localhost:3000/api/sites/countries
+
+###
+
+# GET http://localhost:3000/api/sites/communities/France
+
+###
+
+
+GET http://localhost:3000/api/sites/community/Dona
+
+###
+
+
+GET http://localhost:3000/api/sites
+
+###
+
+GET http://localhost:3000/api/sites/site19900
+
+###
+
+POST  http://localhost:3000/api/sites
+Content-Type: application/json
+
+{
+    "_id": "site19900",
+    "type": "tomb",
+    "supersite_id": "site246",
+    "geo": {
+      "landmass": "Taiwan",
+      "pluscode": "7QJ2VHH8+WF",
+      "latitude": "22.879797",
+      "longitude": "120.566217",
+      "latlong": "22.879797,120.566217",
+      "community": "Meinong",
+      "ch_community": "美濃",
+      "direction": "270",
+      "archipelago": "Taiwan",
+      "deg_to_community": 295,
+      "dir_to_community": 205,
+      "dist_to_community": 6,
+      "country_code": "tw",
+      "country_name": "Taiwan"
+    },
+    "event": [
+      {
+        "_id": "event63529",
+        "type": "fieldwork",
+        "document": [
+          {
+            "_id": "document52933",
+            "mime_type": "image/jpeg",
+            "url": "2010/05/08/DATE20100508TIME084250GEOBOOLyesLONGE120566217LATN22879797ALTnoSIZE18000THUMB3623ORIGunknown.jpg"
+          },
+          {
+            "_id": "document52933",
+            "mime_type": "image/jpeg",
+            "url": "2010/05/08/DATE20100508TIME084250GEOBOOLyesLONGE120566217LATN22879797ALTnoSIZE18000THUMB3623ORIGunknown.jpg"
+          },
+          {
+            "_id": "document52933",
+            "mime_type": "image/jpeg",
+            "url": "2010/05/08/DATE20100508TIME084250GEOBOOLyesLONGE120566217LATN22879797ALTnoSIZE18000THUMB3623ORIGunknown.jpg"
+          }
+        ],
+        "agent": [
+          {"role": "researcher", 
+          "alias": "Sandy", 
+          "agent_id": "agent64243883" },
+          { "role": "researcher", 
+          "alias": "Oliver", 
+          "agent_id": "agent64243880" }
+        ],
+        "time": {
+          "day": "2010-05-08",
+          "lunar": "2010-03-25",
+          "from": "08:42:50",
+          "to": "08:42:50"
+        }
+      }
+    ],
+    "proc_use_for_print": 1,
+    "proc_modified": "2021-10-07",
+    "document": [
+      {
+        "_id": "document52933",
+        "mime_type": "image/jpeg",
+        "url": "2010/05/08/DATE20100508TIME084250GEOBOOLyesLONGE120566217LATN22879797ALTnoSIZE18000THUMB3623ORIGunknown.jpg"
+      }
+    ],
+    "object": [
+      {
+        "_id": "object20222",
+        "type": "tombstone",
+        "geo": {
+          "latitude": "22.879797",
+          "longitude": "120.566217",
+          "latlong": "22.879797,120.566217"
+        },
+        "document": [
+          {
+            "_id": 52933,
+            "mime_type": "image/jpeg",
+            "url": "2010/05/08/DATE20100508TIME084250GEOBOOLyesLONGE120566217LATN22879797ALTnoSIZE18000THUMB3623ORIGunknown.jpg"
+          }
+        ]
+      },
+      {
+        "_id": "object1156787",
+        "type": "altar",
+        "geo": {
+          "latitude": "22.879797",
+          "longitude": "120.566217",
+          "latlong": "22.879797,120.566217"
+        },
+        "document": [
+          {
+            "_id": 52933,
+            "mime_type": "image/jpeg",
+            "url": "2010/05/08/DATE20100508TIME084250GEOBOOLyesLONGE120566217LATN22879797ALTnoSIZE18000THUMB3623ORIGunknown.jpg"
+          }
+        ]
+      },
+      {
+        "_id": "object1378380",
+        "type": "inner space",
+        "geo": {
+          "latitude": "22.879797",
+          "longitude": "120.566217",
+          "latlong": "22.879797,120.566217"
+        },
+        "document": [
+          {
+            "_id": 52933,
+            "mime_type": "image/jpeg",
+            "url": "2010/05/08/DATE20100508TIME084250GEOBOOLyesLONGE120566217LATN22879797ALTnoSIZE18000THUMB3623ORIGunknown.jpg"
+          }
+        ]
+      }
+    ]
+}
+
+###
+
+Delete  http://localhost:3000/sites/1
+
+###

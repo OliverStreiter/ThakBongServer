@@ -1,0 +1,19 @@
+###
+
+GET http://localhost:3000/api/country
+
+###
+
+GET http://localhost:3000/api/country/6496c3391f6d9c4c962a2457
+
+###
+
+POST  http://localhost:3000/api/country
+Content-Type: application/json
+
+
+###
+
+Delete  http://localhost:3000/country
+
+###
