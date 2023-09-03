@@ -17,6 +17,7 @@ router.get('/community/:community_name', async (req, res) => {
     }
 })
 
+
 // Get all
 router.get("/", async (req, res) => {
     try {
@@ -29,6 +30,23 @@ router.get("/", async (req, res) => {
         console.error(err.message)
     }
 })
+
+// Get all by foreign id
+router.get("/fid/:fid", async (req, res) => {
+    try {
+        const {fid} = req.params
+        const types = (await pool.query("SELECT * FROM dontfindview")).rows
+        let sql = types.map(({ type }) => type);
+
+        // console.log(fid)
+        
+        const items = await pool.query("SELECT * FROM siteview WHERE swipe_down_goto_site = $1  AND NOT type = ANY($2) LIMIT 30", [fid, sql])
+        res.json(items.rows)
+    }catch(err){
+        console.error(err.message)
+    }
+})
+
 
 // Search some by string
 router.get("/search/:str", async (req, res) => {
